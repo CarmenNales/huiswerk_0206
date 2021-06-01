@@ -16,7 +16,7 @@ body {
 
 /* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
 
-li {
+ul > li {
     color: hsl(110, 29%, 52%);
 }
 
@@ -28,12 +28,12 @@ li {
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 
-li {
+nav a {
     text-decoration: none;
     color: hsl(359, 79%, 56%)
 }
 
-li:hover {
+nav a:hover {
     color: hsl(359, 79%, 35%)
 }
 
@@ -51,7 +51,7 @@ main a:visited {
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
 input[type="submit"] {
-    background: #22561e;
+    background: #ff0000;
 }
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
