@@ -3,3 +3,82 @@
 ========================================================= */
 
 /* Schrijf hier  jouw CSS! */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.one > p {
+    padding-bottom: 2rem;
+}
+
+.one > h3 {
+    padding-bottom: 2rem;
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three li {
+    display: inline;
+    padding: 2rem;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+div > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.five {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 20px;
+    flex: 1;
+}
+
+article:nth-child {
+    flex: 1
+}
+
+@media screen and (max-width: 990px) {
+    .five {
+        height: auto;
+        display: table;
+    }
+
+    article:nth-child(2) {
+        float: left;
+    }
+
+    article:nth-child(3) {
+        float: right;
+    }
+}
